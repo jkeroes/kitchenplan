@@ -8,7 +8,7 @@ recipes:
         - applications::composer
         - applications::postgresql
         - applications::mysql
-        - applications::php55
+        # - applications::php55
         - dotfiles::workspace
     mac_os_x:
         - applications::svgo
@@ -42,22 +42,28 @@ attributes:
     mysql_root_password: "password"
     homebrewalt:
         apps:
+            - cpanminus
+            - gist
             - git
             - git-extras
-            - wget
-            - pwgen
-            - xmlstarlet
-            - pv
-            - htop-osx
             - git-flow
+            - git-utils
+            - htop-osx
+            - httperf
+            - pv
+            - pwgen
             - siege
             - watch
+            - wget
+            - xmlstarlet
         cask_apps:
             - imageoptim
             - imagealpha
-            - phpstorm
             - sequel-pro
             - sourcetree
+            - tower
+            - kaleidoscope
+            - mongohub
     nodejs:
         apps:
             - phonegap
